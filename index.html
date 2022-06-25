@@ -13,8 +13,13 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
 </head>
 
-<body>
+<body class="">
     <!-- Entête général de la page -->
+    <div class="header-mobile">
+        <a href="/" class="logo-mobile">
+            <h1>Annie <span>Learning</span></h1>
+        </a>
+    </div>
     <header>
         <nav>
             <a href="/" class="logo">
@@ -85,8 +90,8 @@
                     <span class="material-icons-outlined">nightlight</span>
                 </li>
                 <li class="user">
-                    <span class="icon-user">Mon compte <img src="/assets/img/pexels-ali-pazani-2625122.jpg"
-                            alt="user pic"></span>
+                    <span class="icon-user"><span> Mon compte </span> <img
+                            src="/assets/img/pexels-ali-pazani-2625122.jpg" alt="user pic"></span>
                 </li>
 
 
@@ -94,23 +99,24 @@
         </nav>
     </header>
 
+
     <main>
         <div class="container">
 
             <section class="bg-img">
 
                 <div class="sous-titre">
-                    <h2>Bienvenue <span>Annie</span> :)</h2>
-                    <span><i>sommes le 01/06/2022</i></span>
+                    <h2>Bienvenue <span class="username"></span> :)</h2>
+                    <span><i>Nous sommes le <span class="date"></span></i></span>
                 </div>
             </section>
 
             <div class="block-main">
 
                 <section class="colonne colonne-left">
-                    <div class="vignette interfaces">Interfaces</div>
-                    <div class="vignette logique">Logique</div>
-                    <div class="vignette data">Data</div>
+                    <div class="vignette interfaces"><span>Interfaces</span></div>
+                    <div class="vignette logique"><span>Logique</span></div>
+                    <div class="vignette data"><span>Data</span></div>
                 </section>
 
                 <section class="colonne colonne-right">

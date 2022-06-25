@@ -1,53 +1,41 @@
 // Modes sombre et clair
-let darkMode = document.querySelector('.dark_mode'),
-    lightMode = document.querySelector('.light_mode'),
-    container = document.querySelector('.main')
+let darkMode = document.querySelector(".dark_mode"),
+  lightMode = document.querySelector(".light_mode"),
+  main = document.querySelector("main"),
+  logo = document.querySelector(".h1"),
+  body = document.querySelector("body");
 
-    darkMode.addEventListener('click', e => {
-        darkMode.style.display = 'none'
-        lightMode.style.display = 'inherit'
-        document.querySelector('nav').style.backgroundColor = '#FFFFFF'
-        document.body.style.backgroundColor = '#151515'
-        container.style.color = '#FFFFFF'
-        document.body.style.transition = 'background-color 0.5s ease-in-out'
-        document.querySelector('hr').style.backgroundColor = 'linear-gradient(to right, transparent, rgb(255 255 255 / 50%), transparent)'
-    })
+lightMode.style.display = "none";
 
-    lightMode.addEventListener('click', e => {
-        lightMode.style.display = 'none'
-        darkMode.style.display = 'inherit'
-        document.body.style.backgroundColor = '#f1f3f5'
-        container.style.color = '#151515'
-        document.body.style.transition = 'background-color 0.5s ease-in-out'
-        document.querySelector('hr').style.backgroundColor = 'linear-gradient(to right, transparent, rgb(0 0 0 / 50%), transparent)'
-    })
+darkMode.addEventListener("click", (e) => {
+  body.classList.add("dark");
+  darkMode.style.display = "none";
+  lightMode.style.display = "inherit";
+});
 
+lightMode.addEventListener("click", (e) => {
+  body.classList.remove("dark");
+  lightMode.style.display = "none";
+  darkMode.style.display = "inherit";
+});
 
+let welcome = "Jensone";
+document.querySelector(".username").innerHTML = welcome;
 
-init();
+ // fonction pour afficher la date d'aujourd'hui et l'année
 
-function init() {
-
-    window.addEventListener( 'hashchange', hashChange, false )
-
-    hashChange()
-
+function padTo2Digits(num) {
+  return num.toString().padStart(2, "0");
 }
 
-function hashChange() {
-
-    fileName = location.hash ? location.hash.split( '#' )[1] : 'index.html'
-
-    document.title = document.title ? document.title : fileName
-
-    var xmlHttp = new XMLHttpRequest()
-    xmlHttp.open( 'GET', fileName, true )
-    xmlHttp.onreadystatechange = function() {
-
-        container.innerHTML = xmlHttp.readyState === 4 ? new showdown.Converter({tables: true}).makeHtml( xmlHttp.responseText ) : ''
-
-    };
-
-    xmlHttp.send( null )
-
+function formatDate(date) {
+  return [
+    padTo2Digits(date.getDate()),
+    padTo2Digits(date.getMonth() + 1),
+    date.getFullYear(),
+  ].join("/");
 }
+/* console.log(formatDate(new Date())); */
+
+document.querySelector(".date").innerHTML = formatDate(new Date());
+  
