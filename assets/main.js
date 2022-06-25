@@ -1,8 +1,6 @@
 // Modes sombre et clair
 let darkMode = document.querySelector(".dark_mode"),
   lightMode = document.querySelector(".light_mode"),
-  main = document.querySelector("main"),
-  logo = document.querySelector(".h1"),
   body = document.querySelector("body");
 
 lightMode.style.display = "none";
