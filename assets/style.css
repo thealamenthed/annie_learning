@@ -1,0 +1,383 @@
+/* Root */
+:root {
+    --mainColor: #F1F3F4;
+    --darkColor: #151515;
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.dark {
+    background-color: #262525;
+}
+
+.dark main {
+    background-color: #262525;
+}
+
+.dark h1 {
+    color: rgb(255, 255, 255);
+}
+
+.dark .container{
+    background-color: #313639;
+}
+
+.dark .colonne p{
+    color: rgb(255, 255, 255);
+}
+
+.dark footer{
+    color: rgb(255, 255, 255);
+}
+
+body {
+    background: #f1f3f5;
+    font-size: 14px;
+}
+
+header {
+    height: 6%;
+}
+
+.header-mobile{
+    display: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    color: var(--darkColor);
+}
+
+nav {
+    align-self: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav,
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+a:hover {
+    color: rgb(102, 106, 106);
+    transition: 0.4s ease-in-out;
+}
+
+nav ul li {
+    display: inherit;
+    cursor: pointer;
+
+}
+
+nav ul li:hover {
+    color: rgb(102, 106, 106);
+}
+
+
+.icon {
+    background: #fff;
+    border-radius: 50%;
+    padding: 5px 4px;
+    margin: 5px;
+    display: block;
+    height: 35px;
+    width: 35px;
+}
+
+.icon.git-icon {
+    padding: 9px 4px;
+}
+
+.git-icon svg {
+    height: 17px;
+}
+
+.user {
+    margin-right: 10px;
+}
+
+.icon-user {
+    background-color: #fff;
+    border-radius: 5px;
+    vertical-align: middle;
+    border-style: none;
+    padding: 0 1px 0 6px;
+    font-weight: 600;
+    font-size: 12px;
+
+}
+
+.icon-user img {
+    border-radius: 50%;
+    width: 33px;
+    height: 33px;
+    margin-right: 10px;
+    vertical-align: middle;
+    border-style: none;
+}
+
+h1 {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 10px;
+    font-weight: 700;
+
+}
+
+h1 span {
+    font-weight: 300;
+}
+
+h2 span {
+    font-weight: 600;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.sous-titre {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    text-align: end;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 32px;
+
+}
+
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85%;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 15px;
+    margin: 20px 45px 50px 45px;
+    padding: 20px;
+    height: 80vh;
+    position: relative;
+}
+
+.bg-img {
+    background-image: url(/assets/img/pexels-vitaly-vlasov-1342460.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 181px;
+    color: #F1F3F4;
+    border-radius: 5px;
+    position: relative;
+}
+
+.colonne-left {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.interfaces {
+    background-image: url(/assets/img/pexels-cottonbro-5474028.jpg), linear-gradient(rgb(66 61 61 / 18%),rgb(0 0 0 / 88%));
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+   
+
+}
+
+.interfaces span{
+    color: #F1F3F4;
+    position: absolute;
+    bottom: 5px;
+    right: 5%;
+    text-align: end;
+    font-weight: 600;
+
+}
+
+.logique {
+    background-image: url(/assets/img/pexels-cottonbro-5473957.jpg), linear-gradient(rgb(66 61 61 / 18%),rgb(0 0 0 / 88%));
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+    color: #F1F3F4;
+    cursor: pointer;
+
+}
+
+.logique span{
+    position: absolute;
+    bottom: 5px;
+    right: 5%;
+    text-align: end;
+    font-weight: 600;
+
+}
+
+.data {
+    background-image: url(/assets/img/pexels-mati-mango-5952647.jpg), linear-gradient(rgb(66 61 61 / 18%),rgb(0 0 0 / 88%));
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+    color: #F1F3F4;
+    cursor: pointer;
+}
+.data span{
+    position: absolute;
+    bottom: 5px;
+    right: 5%;
+    text-align: end;
+    font-weight: 600;
+
+}
+
+.block-main {
+    display: flex;
+    height: 70%;
+}
+
+.colonne {
+    width: 50%;
+}
+
+.colonne .vignette {
+    width: 33%;
+    height: 86%;
+    border-radius: 5px;
+    margin-top: 25px;
+    margin-right: 15px;
+    position: relative;
+}
+
+.colonne-right {
+    padding: 18px;
+}
+
+.button {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.button li {
+    margin: 10px;
+    background-color: #f1f3f5;
+    border-radius: 22px;
+    padding: 4px 20px;
+    cursor: pointer;
+}
+
+.more {
+    border-style: dashed;
+    padding: 4px 10px !important;
+
+}
+
+footer {
+    text-align: center;
+    margin: -20px 0 24px 0;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (min-width:320px) and (max-width:640px){
+    
+    .header-mobile {
+        display: block;
+        height: 10px;
+        text-align: center;
+        padding: 10px;
+    }
+
+
+    .logo{
+       display: none;
+    }
+    
+    nav, nav ul {
+        display: block;
+        list-style-type: none;
+        margin-top: 10vh;
+        padding: 0;
+        width: 9%;
+        height: 100%; /* Full height */
+        position: fixed; /* Make it stick, even on scroll */
+        overflow: auto; /* Enable scrolling if the sidenav has too much content */
+
+
+    }
+    .icon-user{
+        background-color: inherit;
+
+    }
+    .icon-user span{
+        display: none;
+        
+        
+    }
+
+    .block-main {
+        display: block;
+    }
+
+    .container {
+        height: 100%;
+    }
+
+    .sous-titre {
+        text-align: center;
+    }
+
+    .sous-titre h2 {
+        font-size: 30px;
+    }
+
+
+    .colonne {
+        width: 100%;
+    }
+
+    .colonne-left {
+        display: block;
+    }
+
+    .colonne .vignette {
+        width: 100%;
+        height: 200px;
+    }
+
+    .button li {
+        display: flex;
+        border-radius: 22px;
+        padding: 2px 9px;
+    }
+
+    footer {
+        margin: -28px 0 26px 0;
+    }
+}
