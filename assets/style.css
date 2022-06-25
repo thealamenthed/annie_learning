@@ -30,15 +30,15 @@
     color: rgb(255, 255, 255);
 }
 
-.dark .container{
+.dark .container {
     background-color: #313639;
 }
 
-.dark .colonne p{
+.dark .colonne p {
     color: rgb(255, 255, 255);
 }
 
-.dark footer{
+.dark footer {
     color: rgb(255, 255, 255);
 }
 
@@ -51,7 +51,7 @@ header {
     height: 6%;
 }
 
-.header-mobile{
+.header-mobile {
     display: none;
 }
 
@@ -202,16 +202,16 @@ main {
 }
 
 .interfaces {
-    background-image: url(/assets/img/pexels-cottonbro-5474028.jpg), linear-gradient(rgb(66 61 61 / 18%),rgb(0 0 0 / 88%));
+    background-image: url(/assets/img/pexels-cottonbro-5474028.jpg), linear-gradient(rgb(66 61 61 / 18%), rgb(0 0 0 / 88%));
     background-blend-mode: overlay;
     background-size: cover;
     background-position: center;
     cursor: pointer;
-   
+
 
 }
 
-.interfaces span{
+.interfaces span {
     color: #F1F3F4;
     position: absolute;
     bottom: 5px;
@@ -222,7 +222,7 @@ main {
 }
 
 .logique {
-    background-image: url(/assets/img/pexels-cottonbro-5473957.jpg), linear-gradient(rgb(66 61 61 / 18%),rgb(0 0 0 / 88%));
+    background-image: url(/assets/img/pexels-cottonbro-5473957.jpg), linear-gradient(rgb(66 61 61 / 18%), rgb(0 0 0 / 88%));
     background-blend-mode: overlay;
     background-size: cover;
     background-position: center;
@@ -231,7 +231,7 @@ main {
 
 }
 
-.logique span{
+.logique span {
     position: absolute;
     bottom: 5px;
     right: 5%;
@@ -241,14 +241,15 @@ main {
 }
 
 .data {
-    background-image: url(/assets/img/pexels-mati-mango-5952647.jpg), linear-gradient(rgb(66 61 61 / 18%),rgb(0 0 0 / 88%));
+    background-image: url(/assets/img/pexels-mati-mango-5952647.jpg), linear-gradient(rgb(66 61 61 / 18%), rgb(0 0 0 / 88%));
     background-blend-mode: overlay;
     background-size: cover;
     background-position: center;
     color: #F1F3F4;
     cursor: pointer;
 }
-.data span{
+
+.data span {
     position: absolute;
     bottom: 5px;
     right: 5%;
@@ -305,8 +306,8 @@ footer {
 }
 
 /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
-@media screen and (min-width:320px) and (max-width:640px){
-    
+@media screen and (min-width:320px) and (max-width:640px) {
+
     .header-mobile {
         display: block;
         height: 10px;
@@ -315,30 +316,36 @@ footer {
     }
 
 
-    .logo{
-       display: none;
+    .logo {
+        display: none;
     }
-    
-    nav, nav ul {
+
+    nav,
+    nav ul {
         display: block;
         list-style-type: none;
         margin-top: 10vh;
         padding: 0;
         width: 9%;
-        height: 100%; /* Full height */
-        position: fixed; /* Make it stick, even on scroll */
-        overflow: auto; /* Enable scrolling if the sidenav has too much content */
+        height: 100%;
+        /* Full height */
+        position: fixed;
+        /* Make it stick, even on scroll */
+        overflow: auto;
+        /* Enable scrolling if the sidenav has too much content */
 
 
     }
-    .icon-user{
+
+    .icon-user {
         background-color: inherit;
 
     }
-    .icon-user span{
+
+    .icon-user span {
         display: none;
-        
-        
+
+
     }
 
     .block-main {
