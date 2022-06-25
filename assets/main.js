@@ -22,8 +22,7 @@ lightMode.addEventListener("click", (e) => {
 let welcome = "Jensone";
 document.querySelector(".username").innerHTML = welcome;
 
- // fonction pour afficher la date d'aujourd'hui et l'année
-
+// fonction pour afficher la date d'aujourd'hui et l'année
 function padTo2Digits(num) {
   return num.toString().padStart(2, "0");
 }
@@ -36,6 +35,4 @@ function formatDate(date) {
   ].join("/");
 }
 /* console.log(formatDate(new Date())); */
-
 document.querySelector(".date").innerHTML = formatDate(new Date());
-  
