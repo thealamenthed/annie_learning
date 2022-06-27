@@ -299,13 +299,16 @@ footer {
 /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 640 pixels */
 @media screen and (min-width:320px) and (max-width:640px) {
 
+    :root {
+        scroll-behavior: smooth;
+    }
+
     .header-mobile {
         display: block;
         height: 10px;
         text-align: center;
         padding: 10px;
     }
-
 
     .logo {
         display: none;
